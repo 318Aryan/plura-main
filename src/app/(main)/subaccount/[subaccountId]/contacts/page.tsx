@@ -14,6 +14,7 @@ import { Contact, SubAccount, Ticket } from '@prisma/client'
 import format from 'date-fns/format'
 import React from 'react'
 import CraeteContactButton from './_components/create-contact-btn'
+import { formatDate } from 'date-fns'
 
 type Props = {
   params: { subaccountId: string }
@@ -94,7 +95,7 @@ const ContactPage = async ({ params }: Props) => {
                   <Badge className="bg-emerald-700">Active</Badge>
                 )}
               </TableCell>
-              <TableCell>{format(contact.createdAt, 'MM/dd/yyyy')}</TableCell>
+              <TableCell>{formatDate(contact.createdAt, 'MM/dd/yyyy')}</TableCell>
               <TableCell className="text-right">
                 {formatTotal(contact.Ticket)}
               </TableCell>
