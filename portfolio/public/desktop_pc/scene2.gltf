@@ -1,0 +1,34 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.4.0)"
+    },
+    "extensionsUsed": [
+        "FB_ngon_encoding"
+    ],
+    "buffers": [
+        {
+            "byteLength": 0,
+            "uri": "scene2_0.bin"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scene2",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "nodes[0]"
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
